@@ -11,4 +11,9 @@ class ReflectSpec extends ObjectBehavior
     {
         $this->shouldHaveType('RadHam\Reflect');
     }
+
+    function it_should_factory_a_function_reflection()
+    {
+        $this::function()->shouldHaveType('RadHam\Reflect\FunctionReflection');
+    }
 }
