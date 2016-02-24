@@ -2,10 +2,20 @@
 
 namespace RadHam;
 
+use RuntimeException;
+
 class Reflect
 {
-    public static function function()
+    use Reflect\Utility\Identifiable;
+
+    public static function factory($name)
     {
-        return new Reflect\FunctionReflection;
+        switch ($name) {
+            case self::isFunction($name):
+                return new Reflect\FunctionReflection($name);
+
+            default:
+                throw new RuntimeException("Unexpected parameter: \"{$name}\".");
+        }
     }
 }
