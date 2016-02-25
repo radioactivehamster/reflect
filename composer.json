@@ -20,7 +20,8 @@
     "minimum-stability": "stable",
     "require": {
         "php": "~5.5|~7.0",
-        "radioactivehamster/yaml": "^0.2.0"
+        "radioactivehamster/yaml": "^0.2.0",
+        "illuminate/support": "^5.2"
     },
     "require-dev": {
         "phpspec/phpspec": "^2.4",
