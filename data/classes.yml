@@ -1,0 +1,44 @@
+# SPL <http://php.net/manual/en/book.spl.php>
+## Datastructures
+- SplDoublyLinkedList
+- SplStack
+- SplQueue
+- SplHeap
+- SplMaxHeap
+- SplMinHeap
+- SplPriorityQueue
+- SplFixedArray
+- SplObjectStorage
+## Iterators
+- AppendIterator
+- ArrayIterator
+- CachingIterator
+- CallbackFilterIterator
+- DirectoryIterator
+- EmptyIterator
+- FilesystemIterator
+- FilterIterator
+- GlobIterator
+- InfiniteIterator
+- IteratorIterator
+- LimitIterator
+- MultipleIterator
+- NoRewindIterator
+- ParentIterator
+- RecursiveArrayIterator
+- RecursiveCachingIterator
+- RecursiveCallbackFilterIterator
+- RecursiveDirectoryIterator
+- RecursiveFilterIterator
+- RecursiveIteratorIterator
+- RecursiveRegexIterator
+- RecursiveTreeIterator
+- RegexIterator
+## File Handling
+- SplFileInfo
+- SplFileObject
+- SplTempFileObject
+## Miscellaneous Classes and Interfaces
+- ArrayObject
+- SplObserver
+- SplSubject
