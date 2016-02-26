@@ -11,12 +11,10 @@ class Reflect
 
     public static function factory($name)
     {
-        switch ($name) {
-            case self::isFunction($name):
-                return new ReflectionFunction($name);
-
-            default:
-                throw new RuntimeException("Unexpected parameter: \"{$name}\".");
+        if (self::isFunction($name)) {
+            return new ReflectionFunction($name);
         }
+
+        throw new RuntimeException("Unexpected parameter: \"{$name}\".");
     }
 }
