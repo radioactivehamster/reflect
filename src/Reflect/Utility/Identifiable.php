@@ -4,7 +4,7 @@ namespace RadHam\Reflect\Utility;
 
 trait Identifiable
 {
-    public static function isFunction(string $name)
+    public static function isFunction($name)
     {
         $functions = get_defined_functions();
 
