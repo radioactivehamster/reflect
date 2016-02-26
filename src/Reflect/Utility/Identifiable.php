@@ -4,6 +4,13 @@ namespace RadHam\Reflect\Utility;
 
 trait Identifiable
 {
+    public static function isConstant($name)
+    {
+        $constants = get_defined_constants();
+
+        return array_key_exists($name, $constants);
+    }
+
     public static function isFunction($name)
     {
         $functions = get_defined_functions();

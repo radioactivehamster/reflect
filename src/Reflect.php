@@ -2,6 +2,7 @@
 
 namespace RadHam;
 
+use RadHam\Reflect\ReflectionConstant;
 use ReflectionFunction;
 use RuntimeException;
 
@@ -11,6 +12,10 @@ class Reflect
 
     public static function factory($name)
     {
+        if (self::isConstant($name)) {
+            return new ReflectionConstant($name);
+        }
+
         if (self::isFunction($name)) {
             return new ReflectionFunction($name);
         }

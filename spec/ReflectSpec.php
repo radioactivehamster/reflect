@@ -23,4 +23,9 @@ class ReflectSpec extends ObjectBehavior
 
         $this->shouldThrow('RuntimeException')->duringFactory($invalidParameter);
     }
+
+    function it_should_factory_a_constant_reflection()
+    {
+        $this::factory('E_ERROR')->shouldHaveType('RadHam\Reflect\ReflectionConstant');
+    }
 }
