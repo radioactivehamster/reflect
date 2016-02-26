@@ -9,7 +9,7 @@ class Reflect
 {
     use Reflect\Utility\Identifiable;
 
-    public static function factory($name)
+    public static function factory(string $name)
     {
         if (self::isFunction($name)) {
             return new ReflectionFunction($name);
