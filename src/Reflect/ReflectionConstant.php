@@ -3,6 +3,7 @@
 namespace RadHam\Reflect;
 
 use Reflector;
+use ReflectionClass;
 
 class ReflectionConstant implements Reflector
 {
@@ -23,7 +24,14 @@ class ReflectionConstant implements Reflector
 
     public function __toString()
     {
-        return $this->name;
+        return ($this->class) ? "{$this->class}::{$this->name}"
+                              : $this->name;
+    }
+
+    public function getDeclaringClass()
+    {
+        return ($this->class) ? new ReflectionClass($this->class)
+                              : false;
     }
 
     public function getName()
@@ -33,7 +41,8 @@ class ReflectionConstant implements Reflector
 
     public function getValue()
     {
-        return constant($this->name);
+        return ($this->class) ? constant("{$this->class}::{$this->name}")
+                              : constant($this->name);
     }
 
     /**
