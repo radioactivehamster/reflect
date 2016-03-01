@@ -28,4 +28,9 @@ class ReflectSpec extends ObjectBehavior
     {
         $this::factory('E_ERROR')->shouldHaveType('RadHam\Reflect\ReflectionConstant');
     }
+
+    function it_should_factory_a_class_reflection()
+    {
+        self::factory('PDO')->shouldHaveType('ReflectionClass');
+    }
 }

@@ -4,6 +4,13 @@ namespace RadHam\Reflect\Utility;
 
 trait Identifiable
 {
+    public static function isClass($name)
+    {
+        $classes = get_declared_classes();
+
+        return in_array($name, $classes);
+    }
+
     public static function isConstant($name)
     {
         $constants = get_defined_constants();
