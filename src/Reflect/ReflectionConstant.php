@@ -2,8 +2,8 @@
 
 namespace RadHam\Reflect;
 
-use Reflector;
 use ReflectionClass;
+use Reflector;
 
 class ReflectionConstant implements Reflector
 {
