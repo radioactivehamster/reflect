@@ -12,9 +12,19 @@ class ReflectSpec extends ObjectBehavior
         $this->shouldHaveType('RadHam\Reflect');
     }
 
+    function it_should_factory_a_class_reflection()
+    {
+        self::factory('PDO')->shouldHaveType('ReflectionClass');
+    }
+
+    function it_should_factory_a_constant_reflection()
+    {
+        self::factory('E_ERROR')->shouldHaveType('RadHam\Reflect\ReflectionConstant');
+    }
+
     function it_should_factory_a_function_reflection()
     {
-        $this::factory('trim')->shouldHaveType('ReflectionFunction');
+        self::factory('trim')->shouldHaveType('ReflectionFunction');
     }
 
     function it_should_throw_a_runtime_exception_if_an_invalid_parameter_is_supplied_to_the_factory()
@@ -22,15 +32,5 @@ class ReflectSpec extends ObjectBehavior
         $invalidParameter = '?!?!?!';
 
         $this->shouldThrow('RuntimeException')->duringFactory($invalidParameter);
-    }
-
-    function it_should_factory_a_constant_reflection()
-    {
-        $this::factory('E_ERROR')->shouldHaveType('RadHam\Reflect\ReflectionConstant');
-    }
-
-    function it_should_factory_a_class_reflection()
-    {
-        self::factory('PDO')->shouldHaveType('ReflectionClass');
     }
 }
