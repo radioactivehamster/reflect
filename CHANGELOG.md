@@ -7,3 +7,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ------------------
 ### Added
 - Initial release.
+
+0.1.1 - 2016-03-02
+------------------
+### Added
+- Updated `README.md` with an "Install" section.
