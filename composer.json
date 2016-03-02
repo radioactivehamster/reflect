@@ -1,6 +1,6 @@
 {
     "name": "radioactivehamster/reflect",
-    "description": "A low-level PHP reflection class.",
+    "description": "A PHP reflection helper library.",
     "type": "library",
     "license": "MIT",
     "authors": [
