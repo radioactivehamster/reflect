@@ -21,4 +21,9 @@ class FunctionReflectionSpec extends ObjectBehavior
     {
         $this->name->shouldBe('trim');
     }
+
+    function it_should_have_a_property_named_type_with_a_value_of_function()
+    {
+        $this->type->shouldBe('function');
+    }
 }
