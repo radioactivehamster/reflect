@@ -16,7 +16,7 @@ abstract class AbstractReflection
      * @param  string $name
      * @return void
      */
-    abstract public function __construct(string $name);
+    abstract public function __construct($name);
 
     /**
      * @param  string $property
