@@ -27,7 +27,6 @@ enabled:
   - short_array_syntax
   - single_quote
   - spaces_cast
-  - visibility
 
 finder:
   path:
