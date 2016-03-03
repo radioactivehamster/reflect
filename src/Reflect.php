@@ -2,6 +2,7 @@
 
 namespace RadHam;
 
+use RadHam\Reflect\FunctionReflection;
 use RadHam\Reflect\ReflectionConstant;
 use ReflectionClass;
 use ReflectionFunction;
@@ -22,7 +23,7 @@ class Reflect
         }
 
         if (self::isFunction($name)) {
-            return new ReflectionFunction($name);
+            return new FunctionReflection($name);
         }
 
         throw new RuntimeException("Unexpected parameter: \"{$name}\".");

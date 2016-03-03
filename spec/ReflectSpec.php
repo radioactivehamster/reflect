@@ -24,7 +24,7 @@ class ReflectSpec extends ObjectBehavior
 
     function it_should_factory_a_function_reflection()
     {
-        self::factory('trim')->shouldHaveType('ReflectionFunction');
+        self::factory('trim')->shouldHaveType('RadHam\Reflect\FunctionReflection');
     }
 
     function it_should_throw_a_runtime_exception_if_an_invalid_parameter_is_supplied_to_the_factory()
