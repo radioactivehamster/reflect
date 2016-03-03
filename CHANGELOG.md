@@ -3,6 +3,12 @@ Change Log
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+Unreleased
+----------
+### Changed
+- `RadHam\Reflect::factory()` API.
+- Now requires PHP 7.
+
 0.1.0 - 2016-03-02
 ------------------
 ### Added
