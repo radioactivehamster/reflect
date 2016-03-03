@@ -26,8 +26,8 @@ abstract class AbstractReflection
     {
         $properties = get_class_vars(__CLASS__);
 
-        if (in_array($property, $properties)) {
-            return $this->$property;
+        if (array_key_exists($property, $properties)) {
+            return $this->{$property};
         }
     }
 }
