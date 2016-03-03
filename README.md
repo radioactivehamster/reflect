@@ -24,11 +24,11 @@ License
 -------
 The MIT License (Expat). See the [license file](LICENSE) for details.
 
-[BUILD BADGE]:https://travis-ci.org/radioactivehamster/reflect.svg?branch=master
+[BUILD BADGE]:https://travis-ci.org/radioactivehamster/reflect.svg?branch=master&?style=flat-square
 [BUILD PAGE]: https://travis-ci.org/radioactivehamster/reflect
-[LICENSE BADGE]: https://img.shields.io/github/license/radioactivehamster/reflect.svg
+[LICENSE BADGE]: https://img.shields.io/github/license/radioactivehamster/reflect.svg?style=flat-square
 [LICENSE PAGE]: https://github.com/radioactivehamster/reflect/blob/master/LICENSE
 [PACKAGIST PAGE]: https://packagist.org/packages/radioactivehamster/reflect
-[PACKAGIST VERSION BADGE]: https://img.shields.io/packagist/v/radioactivehamster/reflect.svg
+[PACKAGIST VERSION BADGE]: https://img.shields.io/packagist/v/radioactivehamster/reflect.svg?style=flat-square
 [STYLECI BADGE]: https://styleci.io/repos/52300053/shield
 [STYLECI PAGE]: https://styleci.io/repos/52300053
