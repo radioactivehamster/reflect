@@ -16,13 +16,13 @@ abstract class AbstractReflection
      * @param  string $name
      * @return void
      */
-    abstract public function __construct($name);
+    abstract public function __construct(string $name);
 
     /**
      * @param  string $property
      * @return mixed
      */
-    public function __get($property)
+    public function __get(string $property)
     {
         $properties = get_class_vars(__CLASS__);
 

@@ -7,6 +7,7 @@ Unreleased
 ----------
 ### Changed
 - `RadHam\Reflect::factory()` API.
+- PHP 7+ support only.
 
 0.1.0 - 2016-03-02
 ------------------
