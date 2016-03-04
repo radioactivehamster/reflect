@@ -16,4 +16,9 @@ class ClassReflectionSpec extends ObjectBehavior
     {
         $this->shouldHaveType('RadHam\Reflect\ClassReflection');
     }
+
+    function it_should_have_a_property_named_name_with_a_value_of_pdo()
+    {
+        $this->name->shouldBe('PDO');
+    }
 }
