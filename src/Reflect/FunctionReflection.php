@@ -11,6 +11,6 @@ class FunctionReflection extends AbstractReflection
      */
     public function __construct($name)
     {
-        $this->name = trim($name);
+        $this->name = $name;
     }
 }
