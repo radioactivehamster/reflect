@@ -32,6 +32,9 @@ abstract class AbstractReflection implements JsonSerializable
         }
     }
 
+    /**
+     * @return \stdClass
+     */
     public function jsonSerialize()
     {
         $json       = new stdClass;
@@ -44,6 +47,9 @@ abstract class AbstractReflection implements JsonSerializable
         return $json;
     }
 
+    /**
+     * @return string
+     */
     public function toJson()
     {
         return json_encode($this);
