@@ -26,4 +26,9 @@ class ClassReflectionSpec extends ObjectBehavior
     {
         $this->type->shouldBe('class');
     }
+
+    function it_should_serialize_to_json()
+    {
+        $this->toJson()->shouldBe('{"name":"PDO","type":"class"}');
+    }
 }
