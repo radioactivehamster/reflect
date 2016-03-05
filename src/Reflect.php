@@ -3,10 +3,8 @@
 namespace RadHam;
 
 use RadHam\Reflect\ClassReflection;
+use RadHam\Reflect\ConstantReflection;
 use RadHam\Reflect\FunctionReflection;
-use RadHam\Reflect\ReflectionConstant;
-use ReflectionClass;
-use ReflectionFunction;
 use RuntimeException;
 
 class Reflect
@@ -20,7 +18,7 @@ class Reflect
         }
 
         if (self::isConstant($name)) {
-            return new ReflectionConstant($name);
+            return new ConstantReflection($name);
         }
 
         if (self::isFunction($name)) {

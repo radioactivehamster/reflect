@@ -19,7 +19,7 @@ class ReflectSpec extends ObjectBehavior
 
     function it_should_factory_a_constant_reflection()
     {
-        self::factory('E_ERROR')->shouldHaveType('RadHam\Reflect\ReflectionConstant');
+        self::factory('E_ERROR')->shouldHaveType('RadHam\Reflect\ConstantReflection');
     }
 
     function it_should_factory_a_function_reflection()
