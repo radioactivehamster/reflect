@@ -21,4 +21,9 @@ class ConstantReflectionSpec extends ObjectBehavior
     {
         $this->name->shouldBe('E_ERROR');
     }
+
+    function it_should_have_a_property_named_type_with_a_value_of_constant()
+    {
+        $this->type->shouldBe('constant');
+    }
 }

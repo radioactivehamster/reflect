@@ -2,8 +2,10 @@
 
 namespace RadHam\Reflect;
 
-class ConstantReflection
+class ConstantReflection extends AbstractReflection
 {
+    protected $type = 'constant';
+
     /**
      * @param string $name
      */
