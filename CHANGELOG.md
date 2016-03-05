@@ -3,10 +3,16 @@ Change Log
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+0.2.1 - 2016-03-05
+------------------
+### Added
+- `RadHam\Reflect\AbstractReflection` now implements the `JsonSerializable` trait.
+- Added the `RadHam\Reflect\AbstractReflection::toJson()` method.
+
 0.2.0 - 2016-03-04
 ------------------
 ### Changed
-- `RadHam\Reflect::factory()` API.
+- Changed the `RadHam\Reflect::factory()` API.
 
 0.1.1 - 2016-03-02
 ------------------
