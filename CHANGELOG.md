@@ -3,6 +3,11 @@ Change Log
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+Unreleased
+----------
+### Added
+- Added an "HHVM: tested" badge to the `README.md`. 
+
 0.2.1 - 2016-03-05
 ------------------
 ### Added
