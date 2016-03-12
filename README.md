@@ -1,4 +1,4 @@
-Reflect [![Packagist Version][PACKAGIST VERSION BADGE]][PACKAGIST PAGE] [![GitHub License][LICENSE BADGE]][LICENSE PAGE] [![Build Status][BUILD BADGE]][BUILD PAGE] [![HHVM Status][HHVM BADGE]][BUILD PAGE] [![Sensio Insight][SENSIO BADGE]][SENSIO PAGE] [![SensioLabsInsight](https://insight.sensiolabs.com/projects/7e6ba80a-32e2-4d40-9f28-f0d187b53053/mini.png)](https://insight.sensiolabs.com/projects/7e6ba80a-32e2-4d40-9f28-f0d187b53053)
+Reflect [![Packagist Version][PACKAGIST VERSION BADGE]][PACKAGIST PAGE] [![GitHub License][LICENSE BADGE]][LICENSE PAGE] [![Build Status][BUILD BADGE]][BUILD PAGE] [![HHVM Status][HHVM BADGE]][BUILD PAGE] [![Sensio Labs Insight][SENSIO BADGE]][SENSIO PAGE]
 =======
 > A PHP reflection helper library.
 
@@ -29,7 +29,7 @@ The MIT License (Expat). See the [license file](LICENSE) for details.
 [LICENSE PAGE]: https://github.com/radioactivehamster/reflect/blob/master/LICENSE
 [PACKAGIST PAGE]: https://packagist.org/packages/radioactivehamster/reflect
 [PACKAGIST VERSION BADGE]: https://img.shields.io/packagist/v/radioactivehamster/reflect.svg
-[SENSIO BADGE]: https://img.shields.io/sensiolabs/i/7e6ba80a-32e2-4d40-9f28-f0d187b53053.svg
+[SENSIO BADGE]: https://insight.sensiolabs.com/projects/7e6ba80a-32e2-4d40-9f28-f0d187b53053/mini.png
 [SENSIO PAGE]: https://insight.sensiolabs.com/projects/7e6ba80a-32e2-4d40-9f28-f0d187b53053
 [STYLECI BADGE]: https://styleci.io/repos/52300053/shield
 [STYLECI PAGE]: https://styleci.io/repos/52300053
