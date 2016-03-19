@@ -26,4 +26,9 @@ class StringReflectionSpec extends ObjectBehavior
     {
         $this->value->shouldBe('Hello world!');
     }
+
+    function it_should_serialize_to_json()
+    {
+        $this->toJson()->shouldBe('{"value":"Hello world!","type":"string"}');
+    }
 }
