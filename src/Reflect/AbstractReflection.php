@@ -14,8 +14,7 @@ abstract class AbstractReflection implements JsonSerializable
     protected $type;
 
     /**
-     * @param  string $name
-     * @return void
+     * @param string $name
      */
     abstract public function __construct($name);
 
@@ -25,7 +24,7 @@ abstract class AbstractReflection implements JsonSerializable
      */
     public function __get($property)
     {
-        $properties = get_class_vars(__CLASS__);
+        $properties = get_class_vars(static::class);
 
         if (array_key_exists($property, $properties)) {
             return $this->{$property};
@@ -38,7 +37,7 @@ abstract class AbstractReflection implements JsonSerializable
     public function jsonSerialize()
     {
         $json       = new stdClass;
-        $properties = array_keys(get_class_vars(__CLASS__));
+        $properties = array_keys(get_class_vars(static::class));
 
         foreach ($properties as $property) {
             $json->{$property} = $this->{$property};

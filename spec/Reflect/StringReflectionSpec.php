@@ -21,4 +21,9 @@ class StringReflectionSpec extends ObjectBehavior
     {
         $this->type->shouldBe('string');
     }
+
+    function it_should_have_a_property_named_value_with_a_value_of_hello_world()
+    {
+        $this->value->shouldBe('Hello world!');
+    }
 }
