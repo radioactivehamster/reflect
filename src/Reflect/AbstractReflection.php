@@ -8,9 +8,6 @@ use stdClass;
 abstract class AbstractReflection implements JsonSerializable
 {
     /** @var string */
-    protected $name;
-
-    /** @var string */
     protected $type;
 
     /**

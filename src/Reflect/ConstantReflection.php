@@ -4,7 +4,8 @@ namespace RadHam\Reflect;
 
 class ConstantReflection extends AbstractReflection
 {
-    protected $type = 'constant';
+    /** @var string */
+    protected $name;
 
     /**
      * @param string $name
@@ -12,5 +13,6 @@ class ConstantReflection extends AbstractReflection
     public function __construct($name)
     {
         $this->name = $name;
+        $this->type = 'constant';
     }
 }

@@ -4,13 +4,15 @@ namespace RadHam\Reflect;
 
 class FunctionReflection extends AbstractReflection
 {
-    protected $type = 'function';
+    /** @var string */
+    protected $name;
 
     /**
      * @param string $name
      */
     public function __construct($name)
     {
+        $this->type = 'function';
         $this->name = $name;
     }
 }

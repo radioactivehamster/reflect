@@ -4,7 +4,8 @@ namespace RadHam\Reflect;
 
 class ClassReflection extends AbstractReflection
 {
-    protected $type = 'class';
+    /** @var string */
+    protected $name;
 
     /**
      * @param string $name
@@ -12,5 +13,6 @@ class ClassReflection extends AbstractReflection
     public function __construct($name)
     {
         $this->name = $name;
+        $this->type = 'class';
     }
 }
