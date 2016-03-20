@@ -16,6 +16,7 @@ Usage
 $classReflection    = RadHam\Reflect::factory('PDO');
 $constantReflection = RadHam\Reflect::factory('E_ERROR');
 $functionReflection = RadHam\Reflect::factory('trim'):
+$stringReflection   = RadHam\Reflect::factory('Hello world!');
 ```
 
 License
