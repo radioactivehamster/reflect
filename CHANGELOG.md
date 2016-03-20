@@ -6,7 +6,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 Unreleased
 ----------
 ### Added
-- Added an "HHVM: tested" badge to the `README.md`. 
+- Added an "HHVM: tested" badge to the `README.md`.
+- Added a `RadHam\Reflect\StringReflection` class.
 
 0.2.1 - 2016-03-05
 ------------------

@@ -27,9 +27,14 @@ class ReflectSpec extends ObjectBehavior
         self::factory('trim')->shouldHaveType('RadHam\Reflect\FunctionReflection');
     }
 
+    function it_should_factory_a_string_reflection()
+    {
+        self::factory('Hello world!')->shouldHaveType('RadHam\Reflect\StringReflection');
+    }
+
     function it_should_throw_a_runtime_exception_if_an_invalid_parameter_is_supplied_to_the_factory()
     {
-        $invalidParameter = '?!?!?!';
+        $invalidParameter = null;
 
         $this->shouldThrow('RuntimeException')->duringFactory($invalidParameter);
     }

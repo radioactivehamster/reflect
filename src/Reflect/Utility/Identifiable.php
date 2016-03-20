@@ -25,4 +25,9 @@ trait Identifiable
         return in_array($name, $functions['internal'])
             || in_array($name, $functions['user']);
     }
+
+    public static function isString($data)
+    {
+        return is_string($data);
+    }
 }
