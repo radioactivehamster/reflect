@@ -29,6 +29,6 @@ class ConstantReflectionSpec extends ObjectBehavior
 
     function it_should_serialize_to_json()
     {
-        $this->toJson()->shouldBe('{"name":"E_ERROR","type":"constant"}');
+        $this->shouldImplement('jsonSerializable');
     }
 }

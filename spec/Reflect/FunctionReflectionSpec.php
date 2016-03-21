@@ -29,6 +29,6 @@ class FunctionReflectionSpec extends ObjectBehavior
 
     function it_should_serialize_to_json()
     {
-        $this->toJson()->shouldBe('{"name":"trim","type":"function"}');
+        $this->shouldImplement('jsonSerializable');
     }
 }
