@@ -3,6 +3,11 @@ Change Log
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+0.3.1 - 2016-03-20
+------------------
+### Changed
+- Fix for HHVM test breakage.
+
 0.3.0 - 2016-03-20
 ------------------
 ### Added
